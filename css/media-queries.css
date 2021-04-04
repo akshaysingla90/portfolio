@@ -49,9 +49,8 @@
 
    /* About Section
    ------------------------------------------------------------------- */
-   #about .profile-pic {
-     border:red 2px solid;
-      margin-left: 12px;
+   #about .profile-pic {    
+         margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
    #about .download { width: 50%; }
@@ -95,6 +94,11 @@
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+
+   #about {
+   padding-top: 10px;
+   overflow: visible;
+}
 
    /* mobile navigation
    -------------------------------------------------------------------- */
@@ -214,7 +218,14 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   #about .profile-pic {
+       display: flex;
+       justify-content: center;
+       height: 200px;
+       margin: auto;
+       position: relative;
+       top: -150px;
+      }
    #about .download .button {
       width: 100%;
       text-align: center;
